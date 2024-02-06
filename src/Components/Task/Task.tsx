@@ -1,5 +1,4 @@
 import React from "react";
-
 import { TaskType, deleteTask } from "../../redux/reducer";
 import store from "../../redux/store";
 import Completed from "./Completed";
@@ -11,11 +10,14 @@ const Task: React.FC<TaskType> = ({ taskName, id, completed, dueDate }) => {
   };
 
   return (
-    <div className="flex justify-between items-center px-2 my-2 gap-3 bg-stone-700 mx-4 flex-wrap rounded">
+    <div className="flex border justify-between items-center h-10 px-3 rounded">
       <Completed completed={completed} id={id} />
       <TaskName taskName={taskName} id={id} />
-      <h4 className="text-xs">{dueDate}</h4>
-      <button onClick={handleDelete} className="text-red-500">
+      <h4 className="">{dueDate}</h4>
+      <button
+        onClick={handleDelete}
+        className="text-red-500 bg-button hover:bg-input px-4 py-1 rounded"
+      >
         Delete
       </button>
     </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const NotFound: React.FC = () => {
   return (
-    <main className="relative h-screen overflow-hidden bg-white text-black dark:bg-black dark:text-white">
+    <main className="relative h-screen overflow-hidden bg-white text-black dark:bg-black dark:text-black">
       <header className="absolute top-0 left-0 right-0 z-20">
         <nav className="container px-6 py-4 mx-auto md:px-12">
           <div className="items-center justify-between md:flex">
@@ -27,10 +27,10 @@ const NotFound: React.FC = () => {
               </div>
             </div>
             <div className="hidden space-x-4 md:flex md:items-center md:justify-end">
-              <button className="px-6 py-2 text-white uppercase transition duration-200 ease-in bg-blue-400 border border-blue-400 w-36 hover:bg-blue-500 focus:outline-none">
+              <button className="px-6 py-2 text-black uppercase transition duration-200 ease-in bg-blue-400 border border-blue-400 w-36 hover:bg-blue-500 focus:outline-none">
                 Login
               </button>
-              <button className="px-6 py-2 uppercase transition duration-200 ease-in border border-blue-400 w-36 hover:bg-blue-400 hover:text-white focus:outline-none">
+              <button className="px-6 py-2 uppercase transition duration-200 ease-in border border-blue-400 w-36 hover:bg-blue-400 hover:text-black focus:outline-none">
                 Register
               </button>
             </div>
@@ -43,7 +43,7 @@ const NotFound: React.FC = () => {
             <h1 className="text-6xl font-thin text-center text-gray-800 dark:text-gray-200">
               GOT LOST ?
             </h1>
-            <button className="w-32 px-3 py-2 text-2xl font-light uppercase transition duration-200 ease-in border-b border-yellow-600 hover:bg-yellow-600 hover:text-white focus:outline-none">
+            <button className="w-32 px-3 py-2 text-2xl font-light uppercase transition duration-200 ease-in border-b border-yellow-600 hover:bg-yellow-600 hover:text-black focus:outline-none">
               Help Me
             </button>
           </div>

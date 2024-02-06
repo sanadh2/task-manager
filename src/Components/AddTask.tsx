@@ -50,7 +50,7 @@ const AddTask: React.FC = () => {
             value={task.taskName}
             onChange={handleChange}
             required
-            className="rounded h-10 outline-none max-w-[30rem] w-full bg-stone-900 pl-3 caret-lime-300 "
+            className="rounded h-10 outline-none placeholder:text-slate-700 max-w-[30rem] w-full bg-[#a3b18a] pl-3 caret-lime-300 "
           />
           <div className="flex justify-center items-center gap-3">
             <label htmlFor="date" className="whitespace-nowrap">
@@ -62,12 +62,12 @@ const AddTask: React.FC = () => {
               name="dueDate"
               onChange={handleChange}
               value={task.dueDate}
-              className=" cursor-pointer bg-stone-900 h-10 px-3 md:w-44 w-32"
+              className="bg-[#a3b18a] h-10 px-3  rounded flex justify-center items-center "
             />
           </div>
           <button
             type="submit"
-            className="bg-green-500 whitespace-nowrap h-10 px-4 md:w-40 w-32 rounded hover:bg-green-700 active:bg-green-900"
+            className="bg-button whitespace-nowrap h-10 px-4 rounded hover:bg- active:bg-green-900"
           >
             Add Task
           </button>

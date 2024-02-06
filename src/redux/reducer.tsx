@@ -33,8 +33,12 @@ const tasksSlice = createSlice({
       });
       if (taskToUpdate) Object.assign(taskToUpdate, changes);
     },
+    deleteCompleted(state) {
+      state.tasks = state.tasks.filter((task) => task.completed !== true);
+    },
   },
 });
 
-export const { addTask, deleteTask, updateTask } = tasksSlice.actions;
+export const { addTask, deleteTask, updateTask, deleteCompleted } =
+  tasksSlice.actions;
 export default tasksSlice.reducer;

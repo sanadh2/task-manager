@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import store from "../../redux/store";
 import { updateTask } from "../../redux/reducer";
+
 type PropTypes = {
   completed: boolean;
   id: string;
@@ -15,12 +16,14 @@ const Completed: React.FC<PropTypes> = ({ id, completed }) => {
   };
 
   return (
-    <input
-      type="checkbox"
-      checked={isCompleted}
-      onChange={onChange}
-      className="bg-transparent appearance-none w-4 h-4 aspect-square border border-white checked:bg-white"
-    />
+    <div className="border w-4 h-4 flex justify-center items-center">
+      <input
+        type="checkbox"
+        checked={isCompleted}
+        onChange={onChange}
+        className="appearance-none bg-transparent transition-colors duration-500  aspect-square outline-none h-2 w-2 checked:bg-black"
+      />
+    </div>
   );
 };
 
