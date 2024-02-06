@@ -19,7 +19,7 @@ const Completed: React.FC<PropTypes> = ({ id, completed }) => {
       type="checkbox"
       checked={isCompleted}
       onChange={onChange}
-      className="bg-transparent appearance-none w-4 h-4 border border-white checked:bg-white"
+      className="bg-transparent appearance-none w-4 h-4 aspect-square border border-white checked:bg-white"
     />
   );
 };

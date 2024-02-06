@@ -19,7 +19,7 @@ const TaskName: React.FC<PropTypes> = ({ taskName, id }) => {
       type="text"
       value={name}
       onChange={onChange}
-      className="outline-none focus:border border-white bg-inherit pl-3"
+      className="outline-none focus: border-white bg-inherit pl-3"
     />
   );
 };

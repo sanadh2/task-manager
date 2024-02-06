@@ -11,11 +11,13 @@ const Task: React.FC<TaskType> = ({ taskName, id, completed, dueDate }) => {
   };
 
   return (
-    <div className="flex justify-between  items-center px-2 my-2">
+    <div className="flex justify-between items-center px-2 my-2 gap-3 bg-stone-700 mx-4 flex-wrap rounded">
       <Completed completed={completed} id={id} />
       <TaskName taskName={taskName} id={id} />
-      <h4>{dueDate}</h4>
-      <button onClick={handleDelete}>Delete</button>
+      <h4 className="text-xs">{dueDate}</h4>
+      <button onClick={handleDelete} className="text-red-500">
+        Delete
+      </button>
     </div>
   );
 };
